@@ -1,22 +1,19 @@
 #cloud-config
 autoinstall:
-  version: 1
-  identity:
-    hostname: usuario
-    username: usuario
-    password: 'usuario'
-  ssh:
-    install-server: true
-  storage:
-    layout:
-      name: direct
-  locale: en_US
-  keyboard:
-    layout: es
-  packages:
-    - openssh-server
-  user-data:
-    disable_root: false
-  late-commands:
-    - "curtin in-target -- apt-get update"
-    - "curtin in-target -- apt-get upgrade -y"
+version: 1
+locale: es_ES.UTF-8
+Keyboard:
+layout: es
+timezone: Europe/Madrid
+
+network:
+version: 2
+ethernets:
+enp1s0:
+enp1s0:
+dhcp4: true
+
+identity:
+username: usuario
+hotname: usuario
+password: 'usuario'
