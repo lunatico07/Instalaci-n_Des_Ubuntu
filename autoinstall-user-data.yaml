@@ -1,6 +1,7 @@
 #cloud-config
 autoinstall:
   version: 1
+  
   locale: es_ES.UTF-8
   keyboard:
     layout: es
@@ -15,4 +16,4 @@ network:
 identity:
   username: usuario
   hostname: usuario
-  password: 'usuario'
+  password: usuario
