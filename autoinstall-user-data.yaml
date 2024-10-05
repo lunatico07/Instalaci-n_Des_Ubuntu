@@ -16,4 +16,4 @@ network:
 identity:
   username: admin
   hostname: usuario
-  password: ¨'usuario'
+  password: 'usuario'
