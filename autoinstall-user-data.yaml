@@ -1,19 +1,22 @@
 #cloud-config
 autoinstall:
   version: 1
-  
+
+  source:
+    id: ubuntu-server-minimal
+
   locale: es_ES.UTF-8
   keyboard:
     layout: es
   timezone: Europe/Madrid
 
-network:
-  version: 2
-  ethernets:
-    enp1s0:
-      dhcp4: true
+  network:
+    version: 2
+    ethernets:
+      enp1s0:
+        dhcp4: true
 
-identity:
-  username: admin
-  hostname: usuario
-  password: 'usuario'
+  identity:
+    username: usuario
+    hostname: usuario
+    password: 'usuario'
