@@ -1,10 +1,6 @@
 #cloud-config
 autoinstall:
   version: 1
-
-  source:
-    id: ubuntu-server-minimal
-
   locale: es_ES.UTF-8
   keyboard:
     layout: es
@@ -18,5 +14,5 @@ autoinstall:
 
   identity:
     username: usuario
-    hostname: usuario
+    hostname: usuarioubuntu
     password: 'usuario'
